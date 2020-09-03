@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pricing</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="text-block">
+                    <h3>Ready to start?</h3>
+                    <p>Get access to all our premium courses, tutorials, downloads, certificates and priority support.</p>
+                </div>
+                <div class="switcher">
+                    <p class="block monthly">Monthly</p>
+                    <p class="block annual">Annual</p>
+                </div>
+                <div class="card-group">
+                    <div class="card-wrapper">
+                        <div class="card card1">
+                            <div class="card-content">
+                                <p class="desc">Basic</p>
+                                <h1 class="price">Free</h1>
+                                <p class="plan">Trial</p>
+                                <div class="packages">
+                                    <p class="package"><span class="bold">Free</span> Courses</p>
+                                    <p class="package"><span class="bold">5 Premium </span>Videos</p>
+                                    <p class="package"><span class="bold">Notify me, </span>Like</p>
+                                </div>
+                                <button class="subscribe">Subscribe</button>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card card2">
+                            <div class="card-content">
+                                <p class="desc">Pro</p>
+                                <h1 class="price">$19</h1>
+                                <p class="plan">per month, billed monthly</p>
+                                <div class="packages">
+                                    <p class="package"><span class="bold">All courses</span> and videos</p>
+                                    <p class="package"><span class="bold">Source files, </span>ePub</p>
+                                    <p class="package"><span class="bold">Certificates, </span>Projects</p>
+                                    <p class="package"><span class="bold">Premium, </span>tutorials</p>
+                                    <p class="package"><span class="bold">UI, </span>icons, illustrations</p>
+                                    <p class="package"><span class="bold">Commercial, </span>use</p>
+                                </div>
+                                <button class="subscribe">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card card3">
+                            <div class="card-content">
+                                <p class="desc">Team</p>
+                                <h1 class="price">$95</h1>
+                                <p class="plan">per year, billed monthly</p>
+                                <div class="packages">
+                                    <p class="package"><span class="bold">1 users</span><span class="plus">+</span><span class="minus">-</span></p>
+                                    <p class="package"><span class="bold">Manage </span>subscriptions</p>
+                                    <p class="package"><span class="bold">Team </span>progress</p>
+                                </div>
+                                <button class="subscribe">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded',function() {
+
+            const monthly = document.querySelector('.monthly');
+            const annual = document.querySelector('.annual');
+            const switcher = document.querySelector('.switcher');
+
+            annual.addEventListener('click',function() {
+                switcher.classList.add('switch');
+            });
+
+            monthly.addEventListener('click',function() {
+                switcher.classList.remove('switch');
+            });
+
+
+        });
+
+    </script>
+</body>
+</html>
